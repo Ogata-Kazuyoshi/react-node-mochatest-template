@@ -12,7 +12,8 @@
     "seed": "knex seed:run",
     "makeSeed": "knex seed:make",
     "testmon": "nodemon ./node_modules/mocha/bin/mocha",
-    "testmocha": "mocha --exit"
+    "testmocha": "mocha --exit",
+    "build": "npm install && npm run migrate && npm run seed"
   },
   "keywords": [],
   "author": "",

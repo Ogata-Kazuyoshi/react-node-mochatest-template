@@ -33,6 +33,8 @@ function App() {
         <button onClick={clickGetHandler}>データゲットボタン</button>
       </p>
       <div>
+        <br />
+        <br />
         <div>
           <label htmlFor="">name</label>
           <input type="text" onChange={nameChange} />
