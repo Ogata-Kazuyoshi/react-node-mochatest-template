@@ -1,0 +1,21 @@
+{
+  "name": "fullstack-dir-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "setup": "npm install && npm install --prefix client && npm install --prefix server",
+    "start": "concurrently \"npm run dev --prefix client\" \"npm run watch --prefix client\" \"npm run start --prefix server\"",
+    "startmon": "concurrently \"npm run dev --prefix client\" \"npm run watch --prefix client\" \"npm run startmon --prefix server\"",
+    "build": "npm run setup && npm run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "vite": "^5.0.2"
+  }
+}

@@ -11,7 +11,6 @@ const setupServer = () => {
       origin: 'http://localhost:5173',
     })
   );
-
   app.use('/', express.static(path.join(__dirname, '../client/dist')));
   app.use('/api/v1', apiRoute);
 
